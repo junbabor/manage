@@ -1,0 +1,314 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#app,
+.wrapper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    color: #3f4656;
+    font-size: 16px;
+    font-family: 'PingFang SC', "Helvetica Neue", Helvetica, "microsoft yahei", arial, STHeiTi, sans-serif;
+}
+
+a {
+    text-decoration: none
+}
+
+
+.content-box {
+    position: absolute;
+    left: 260px;
+    right: 0;
+    top: 60px;
+    bottom: 0;
+    -webkit-transition: left .3s ease-in-out;
+    transition: left .3s ease-in-out;
+    background: #edf2f6;
+}
+
+.content {
+    width: auto;
+    padding: 20px;
+    height: 100%;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.content-collapse {
+    left: 65px;
+}
+
+.container {
+    padding: 30px;
+}
+
+.wrap {
+    position: relative;
+    min-height: 100%;
+    background-color: #fff;
+}
+.crumbs {
+    padding-bottom: 10px;
+    background: #edf2f6;
+}
+.el-breadcrumb {
+    font-size: 16px !important;
+    line-height: 24px !important;
+}
+
+.pagination {
+    margin: 20px 0;
+    text-align: right;
+}
+
+.plugins-tips {
+    padding: 20px 10px;
+    margin-bottom: 20px;
+}
+
+.el-button+.el-tooltip {
+    margin-left: 10px;
+}
+
+.el-table tr:hover {
+    background: #f6faff;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.move-enter-active,
+.move-leave-active {
+    transition: opacity .5s;
+}
+
+.move-enter,
+.move-leave {
+    opacity: 0;
+}
+
+/*BaseForm*/
+
+.form-box {
+    width: 600px;
+}
+
+.form-box .line {
+    text-align: center;
+}
+
+.el-time-panel__content::after,
+.el-time-panel__content::before {
+    margin-top: -7px;
+}
+
+.el-time-spinner__wrapper .el-scrollbar__wrap:not(.el-scrollbar__wrap--hidden-default) {
+    padding-bottom: 0;
+}
+
+/*Upload*/
+
+.pure-button {
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.g-core-image-corp-container .info-aside {
+    height: 45px;
+}
+
+.el-upload--text {
+    background-color: #fff;
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    box-sizing: border-box;
+    width: 360px;
+    height: 180px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.el-upload--text .el-icon-upload {
+    font-size: 67px;
+    color: #97a8be;
+    margin: 40px 0 16px;
+    line-height: 50px;
+}
+
+.el-upload--text {
+    color: #97a8be;
+    font-size: 14px;
+    text-align: center;
+}
+
+.el-upload--text em {
+    font-style: normal;
+}
+
+/*VueEditor*/
+
+.ql-container {
+    min-height: 400px;
+}
+
+.ql-snow .ql-tooltip {
+    transform: translateX(117.5px) translateY(10px) !important;
+}
+
+.editor-btn {
+    margin-top: 20px;
+}
+
+/*markdown*/
+
+.v-note-wrapper .v-note-panel {
+    min-height: 500px;
+}
+
+/* 列表搜索 */
+.search-form {
+    padding-top: 15px;
+    padding-bottom: 45px;
+}
+.search-form .el-form-item {
+    width: 125px;
+}
+.search-form  .el-form-item--small.el-form-item {
+    margin-bottom: 0;
+}
+.search-form .el-input--small .el-input__inner {
+    height: 38px;
+    line-height: 38px;
+    font-size: 16px;
+    border-color: #8c91a4;
+}
+.search-form .btn-item {
+    width: auto;
+}
+.search-form .el-button--small {
+    width: 112px;
+    height: 38px;
+    font-size: 16px;
+}
+
+/* 列表表格 */
+.el-table.list-table {
+    color: #3f4656;
+}
+.el-table.list-table th {
+    padding: 16px 0;
+    color: #788895;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    background-color: #ebeef3;
+}
+.el-table.list-table td {
+    padding: 16px 0;
+    font-size: 14px;
+    text-align: center;
+}
+
+.el-table--striped.list-table .el-table__body tr.el-table__row--striped td {
+    background-color: #edf2f6;
+}
+.list-table .el-button--small {
+    font-size: 14px;
+}
+
+/* pagination */
+.el-pagination {
+    padding: 26px 0 !important;
+    text-align: center;
+    font-size: 16px;
+}
+.el-pagination__total {
+    float: left;
+    font-size: 16px!important;
+    color: #3f4656!important;
+}
+.el-pagination__jump {
+    float: right;
+    font-size: 16px!important;
+    color: #3f4656!important;
+}
+.el-pagination__sizes {
+    margin-right: 20% !important;
+    font-size: 16px !important;
+    color: #3f4656!important;
+}
+
+/* dialog */
+.wrap .el-dialog__header {
+    padding: 18px 26px;
+    background-color: #eef2f6;
+}
+.wrap .el-dialog__title {
+    font-size: 16px;
+}
+.wrap .el-dialog__headerbtn .el-dialog__close {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3f4656
+}
+.modal-form .el-select {
+    width: 200px;
+}
+
+.wrap .el-dialog__footer {
+    text-align: center;
+}
+.wrap .el-dialog__footer .el-button--small {
+    width: 110px;
+    height: 38px;
+    font-size: 16px;
+}
+.wrap .el-dialog__footer .el-button+.el-button {
+    margin-left: 26px;
+}
+/* 导入 */
+.import .el-upload {
+    display: block;
+    width: 100%;
+    height: auto;
+    border: none;
+}
+.import-tit {
+    padding-right: 20px;
+    text-align: right;
+    line-height: 38px;
+    color: #3f4656;
+}
+.import .el-input--small .el-input__inner {
+    height: 38px;
+    line-height: 38px;
+}
+.import .el-input-group__append {
+    width: 48px;
+    color: #fff;
+    font-size: 16px;
+    background-color: #409EFF;
+    border-color: #409EFF;
+}
+.import .download-link {
+    padding: 24px 10px 20px;
+}
+.import .download-link a {
+    color: #4186f6;
+    font-size: 16px;
+}
